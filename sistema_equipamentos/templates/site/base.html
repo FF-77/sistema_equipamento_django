@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema equipamentos</title>
+    <style>
+        #menu a {
+            text-decoration: none;
+            background-color: skyblue;
+            padding: 5px;
+            border-radius: 0.2rem;
+            width: 50%;
+            color: blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+        }
+
+        #menu a:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        #menu ul li {
+            display: inline-block;
+            padding: 10px 10px 10px 10px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:blue;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: skyblue;
+        }
+
+        body {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(229, 235, 253, 0.884);
+        }
+
+        footer p {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 9pt;
+            background-color: skyblue;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 70%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <nav id='menu'>
+            <ul>
+                <li><a href="http://127.0.0.1:8000">Home</a></li>
+                <li><a href="http://127.0.0.1:8000/cadastrar">Cadastrar</a></li>
+                <li><a href="http://127.0.0.1:8000/admin">Logar</a></li>
+            </ul>
+        </nav>
+
+        <h1>Bem vindo!</h1>
+    </header>
+
+    <main id='conteudo'>
+
+        {% block content %}{% endblock %}
+
+    </main>
+
+    <footer id='rodape'>
+        <p>Contruído por F.F. 2021</p>
+    </footer>
+
+</body>
+</html>

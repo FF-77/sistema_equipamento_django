@@ -1,0 +1,15 @@
+{% extends 'site/base.html' %}
+
+{% block content %}
+
+<form method="POST" action="">
+
+    {% csrf_token %}
+
+    {{ cadastro.as_p }}
+
+    <input type="submit" value="salvar">
+ 
+</form>
+
+{% endblock %}
